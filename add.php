@@ -27,5 +27,5 @@ require_once 'pdo.php';
 // var_dump($list) ;
 var_dump($_POST);
 
-$student = new Student ($_POST['name'], $_POST['age']);
+$student = new Student ($_POST['id'], $_POST['name'], $_POST['age']);
 StudentRepository::AddStudent($student);
